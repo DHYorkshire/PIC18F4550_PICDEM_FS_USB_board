@@ -26,7 +26,7 @@ USB address:
  RS232 set at 57600 bit/sec, 8 bits, 1 stop bit no parity. Sends hello world message on start-up 
  Handbook to board (DSS1526A) in project file. 
  
- Using USB communicate with a windows computer python appication may need the driver changing (using a program such as zadig v 2.5) 
+ Using USB communicate with a windows computer python application may need the driver changing (using a program such as zadig v 2.5) 
  - this has been tesed using Windows 10 & the libusb - win32 driver assocated with the vendor ID/product ID
 
 USN has been tested witha raspbery Pi running Python 3 with no problems (accept needing to run in admin mode or update USB sercurity file) 
