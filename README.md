@@ -1,6 +1,6 @@
 # PIC18F4550_PICDEM_FS_USB_board
 updated software for the PICDEM FS USB demonstration board using Microchip 2008 MLA, MPLAB X 5.1 and XC8 V2.05
-This is for the older 18F4550 demo board (2004) not the newer 18F45K50 version.
+This is for the older 18F4550 demo board (DM163025) not the newer 18F45K50 version.
 Based on the MICROCHIP MLA ( https://www.microchip.com/en-us/tools-resources/develop/libraries/microchip-libraries-for-applications )
 This updates the Demo to a HID protocol 
 USB address:
