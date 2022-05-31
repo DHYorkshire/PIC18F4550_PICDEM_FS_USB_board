@@ -29,5 +29,5 @@ USB address:
  Using USB communicate with a windows computer python application may need the driver changing (using a program such as zadig v 2.5) 
  - this has been tesed using Windows 10 & the libusb - win32 driver assocated with the vendor ID/product ID
 
-USN has been tested witha raspbery Pi running Python 3 with no problems (accept needing to run in admin mode or update USB sercurity file) 
+USB has been tested witha raspbery Pi running Python 3 with no problems (accept needing to run in admin mode or update USB sercurity file) 
 
