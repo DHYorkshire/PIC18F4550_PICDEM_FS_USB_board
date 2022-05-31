@@ -1,5 +1,6 @@
 # PIC18F4550_PICDEM_FS_USB_board
 updated software for the PICDEM FS USB demonstration board using Microchip 2008 MLA, MPLAB X 5.1 and XC8 V2.05
+This is for the older 18F4550 demo board (2004) not the newer 18F45K50 version.
 Based on the MICROCHIP MLA ( https://www.microchip.com/en-us/tools-resources/develop/libraries/microchip-libraries-for-applications )
 This updates the Demo to a HID protocol 
 USB address:
@@ -14,9 +15,9 @@ USB address:
     -0x80  - TOGGLE_LED
     -0x81 -  GET_BUTTON_STATUS (Buffer[1] 1/0 for switch up down
     -0x37 -  READ_POTENTIOMETER(Buffer [1] - LSB, Buffer [2] = MSB) 10 bit ADC
-        0x93 -  READ_TEMP (via SPI) (Buffer[1] = byte 1, Buffer [2] = byte 2 
+    -0x93 -  READ_TEMP (via SPI) (Buffer[1] = byte 1, Buffer [2] = byte 2 
         
- The temaperture sensor has a 12 bit word structure.
+ The temaperture sensor has a 12 bit word structure (TC77 )
  
  Python to read bytes =    temp_word=(byteread[1]<<8 |byteread[2])
            to read temp    temp_word>>7  (positive whole values)
