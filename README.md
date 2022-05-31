@@ -10,11 +10,14 @@ USB address:
  
  Endpoint address 0x81
  
- USB commands   0x80  - TOGGLE_LED
-                0x81 -  GET_BUTTON_STATUS (Buffer[1] 1/0 for switch up down
-                0x37 -  READ_POTENTIOMETER(Buffer [1] - LSB, Buffer [2] = MSB) 10 bit ADC
-                0x93 -  READ_TEMP (via SPI) (Buffer[1] = byte 1, Buffer [2] = byte 2 
- The temaperture sensor has a 12 bit word structure.                
+ USB commands   
+    -0x80  - TOGGLE_LED
+    -0x81 -  GET_BUTTON_STATUS (Buffer[1] 1/0 for switch up down
+    -0x37 -  READ_POTENTIOMETER(Buffer [1] - LSB, Buffer [2] = MSB) 10 bit ADC
+        0x93 -  READ_TEMP (via SPI) (Buffer[1] = byte 1, Buffer [2] = byte 2 
+        
+ The temaperture sensor has a 12 bit word structure.
+ 
  Python to read bytes =    temp_word=(byteread[1]<<8 |byteread[2])
            to read temp    temp_word>>7  (positive whole values)
            and             temp_word>>3 & 0b00000111 (positive decimal values)
